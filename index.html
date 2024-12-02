@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>omlookTest</title>
+  </head>
+  <body>
+    <main class="page">
+      <svg
+        id="spinner-progress"
+        class="svg_circle_loader"
+        width="200"
+        height="200"
+        data-value="0"
+      >
+        <circle cx="100" cy="100" r="50" class="circle_background"></circle>
+        <circle
+          cx="100"
+          cy="100"
+          r="50"
+          class="circle_loader"
+          id="circle"
+        ></circle>
+      </svg>
+      <div class="page__controls controls">
+        <div class="controls__item item-controls">
+          <input class="value-input" type="number" />
+          <p class="item-controls__text">Value</p>
+        </div>
+
+        <div id="animate" class="controls__item item-controls">
+          <label class="checkbox">
+            <input type="checkbox" />
+            <span> </span>
+          </label>
+          <p class="item-controls__text">Animated</p>
+        </div>
+        <div id="hide" class="controls__item item-controls">
+          <label class="checkbox">
+            <input type="checkbox" />
+            <span> </span>
+          </label>
+          <p class="item-controls__text">Hide</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
